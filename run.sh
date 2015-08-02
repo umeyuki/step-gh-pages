@@ -43,7 +43,7 @@ branch="gh-pages"
 if [[ "$repo" =~ $WERCKER_GIT_OWNER\/$WERCKER_GIT_OWNER\.github\.(io|com)$ ]]; then
 	branch="master"
 fi
-
+info "\"$branch\""
 
 # init repository
 git init
