@@ -39,10 +39,8 @@ fi
 
 
 # setup branch
-branch="gh-pages"
-if [[ "$repo" =~ $WERCKER_GIT_OWNER\/$WERCKER_GIT_OWNER\.github\.(io|com)$ ]]; then
-	branch="master"
-fi
+ranch="master"
+
 info "\"$branch\""
 
 # init repository
@@ -62,4 +60,3 @@ then
 else
   success "pushed to github pages"
 fi
-
